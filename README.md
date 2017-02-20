@@ -67,10 +67,6 @@ We send this **request** to Google directly (no more DNS Servers.) Google receiv
 
 This pattern of **requests** for information from clients and relevant **responses** from servers is the backbone of modern internet activity. Neat, right?!
 
-## Challenges
-
-Skate up a ramp and do a sweet Ollie Freestyle while giving out the rock-on sign with your other hand
-
 ## Resources
 
 * <a href="https://www.youtube.com/watch?v=GlZC4Jwf3xQ" target="_blank">Awkward but lovable guy gives technical description of DNS Servers</a>
