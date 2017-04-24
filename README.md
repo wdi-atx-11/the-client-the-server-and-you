@@ -1,16 +1,45 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Client, Servers, and You!
+<!--
+Location: ATX
+Last edited by: Justin Castilla
+Created by: Justin Castilla
+(Extracted from a longer command line guide from WDI33)
+-->
+
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
+# Clients, Servers, and You!
+
+### Why is this important?
+<!-- framing the "why" in big-picture/real world examples -->
+*This workshop is important because:*
+
+Most people are familiar with their computers' graphical user interface, rich with icons and buttons.   The command line interface, or CLI, is an alternative without these fancy graphics -- a plain, text-­based interface for performing tasks on a computer.
+
+Many of the tasks developers perform are faster when done from the command line, and the command line interface usually has some extra features that are hidden in normal graphical interfaces. That's because programmers assume someone using the command line is more knowledgeable about their computer and less likely to make mistakes.  Think about that from an employment perspective, too. As a developer, you will be expected to be proficient with your computer, including performing basic tasks on the command line.
+
+### What are the objectives?
+<!-- specific/measurable goal for students to achieve -->
+*After this workshop, developers will be able to:*
+
+- Familiarize themselves with the basic technology transactions of browsing the web
+- Understand the differencee between a domain name and an IP address
+- Identity the main differences between a human-language domain address and an IP Address.
 
 
-| Objectives |
-| :--- |
-| Familiarize yourself with the basic technology transactions of browsing the web |
-| Understand the difference between a domain name and an IP address |
+### Where should we be now?
+<!-- call out the skills that are prerequisites -->
+*Before this workshop, developers should already be able to:*
 
-<img src="http://www.reactiongifs.com/wp-content/uploads/2013/10/tim-and-eric-mind-blown.gif">
+- Open an internet browser and navigate to a website
+- Imagine invisible radio signals going from your laptop to somewhere else. 
+- Realize that computers are NOT magic but are - in fact - quite logical and well-organized
+
 
 ## What is this client/server magic?
 
 The client–server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients.  
+
+<img src="http://www.reactiongifs.com/wp-content/uploads/2013/10/tim-and-eric-mind-blown.gif">
   
 Often clients and servers communicate over a computer network on separate hardware, but both client and server may reside in the same system. 
  
@@ -29,13 +58,15 @@ Examples of computer applications that use the client–server model are Email, 
 ##The how and why
 There are currently **1,151,254,186** websites in existence.  You are currently on one laptop.  How are you able to travel to every single one of those websites from your little dinky laptop with an expectation of speed and accuracy?  
 
-Domain Name System, or **DNS servers**, act as information redirectors that will direct your search for a certian website to it's actual physical server location.  When we enter `https://www.google.com` into our browser, we actually go on a fantastic and magical ride across at least three separate servers across our greater region (Northern California for WDI-36) that help us find the actual Google server.
+Domain Name System, or **DNS servers**, act as information redirectors that will direct your search for a certian website to it's actual physical server location.  When we enter `https://www.google.com` into our browser, we actually go on a fantastic and magical ride across at least three separate servers across our greater region (mainly in Dallas for WDI-11) that help us find the actual Google server.
 
 The Process:  
 
 1. Type www.google.com into your browser address bar.
+ 
+2. Your browser sends an HTTP Request (internet magic) to a DNS server. HTTP - at this point - can be thought of as an envelope of information that is sent to and from clients and servers. It includes a request type, header information, information on what the HTTP request wants in return, and where the HTTP request wants to go.
 
-2. Your browser sends an HTTP Request (internet magic) to a DNS server.
+
 
 3. The DNS server looks for a server that has a big list of all `.com` websites and sends us the IP address of that server.  An IP address is a series of digits that act just like a physical street address.
 
@@ -67,9 +98,19 @@ We send this **request** to Google directly (no more DNS Servers.) Google receiv
 
 This pattern of **requests** for information from clients and relevant **responses** from servers is the backbone of modern internet activity. Neat, right?!
 
-## Resources
+## Closing Thoughts
+- DNS (Domain Name Systems) allow us to quickly and efficiently navigate to websites
+- The Request and Response cycle of Client/Server communications is the foundation of all internet-based interactions.
+- Requests and Responses are comprised of specific HTTP packets sent back and forth between the client and the server
+
+
+
+
+### Additional Resources
 
 * <a href="https://www.youtube.com/watch?v=GlZC4Jwf3xQ" target="_blank">Awkward but lovable guy gives technical description of DNS Servers</a>
 * <a href="http://searchnetworking.techtarget.com/definition/client-server" target="_blank">A tangible article on TCP/IP Protocols</a>
 * <a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank">Name Servers - A main component of DNS Servers</a>
 * <a href="https://en.wikipedia.org/wiki/Name_server" target="_blank">DNS Server Wikipedia Page</a>
+
+
